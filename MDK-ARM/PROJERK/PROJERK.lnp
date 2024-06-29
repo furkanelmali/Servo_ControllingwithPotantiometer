@@ -1,0 +1,27 @@
+--cpu Cortex-M3
+"projerk\startup_stm32f100xb.o"
+"projerk\liquidcrystal_i2c.o"
+"projerk\main.o"
+"projerk\stm32f1xx_it.o"
+"projerk\stm32f1xx_hal_msp.o"
+"projerk\stm32f1xx_hal_gpio_ex.o"
+"projerk\stm32f1xx_hal_adc.o"
+"projerk\stm32f1xx_hal_adc_ex.o"
+"projerk\stm32f1xx_hal.o"
+"projerk\stm32f1xx_hal_rcc.o"
+"projerk\stm32f1xx_hal_rcc_ex.o"
+"projerk\stm32f1xx_hal_gpio.o"
+"projerk\stm32f1xx_hal_dma.o"
+"projerk\stm32f1xx_hal_cortex.o"
+"projerk\stm32f1xx_hal_pwr.o"
+"projerk\stm32f1xx_hal_flash.o"
+"projerk\stm32f1xx_hal_flash_ex.o"
+"projerk\stm32f1xx_hal_exti.o"
+"projerk\stm32f1xx_hal_i2c.o"
+"projerk\stm32f1xx_hal_tim.o"
+"projerk\stm32f1xx_hal_tim_ex.o"
+"projerk\system_stm32f1xx.o"
+--strict --scatter "PROJERK\PROJERK.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "PROJERK.map" -o PROJERK\PROJERK.axf
